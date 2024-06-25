@@ -11,20 +11,32 @@
 
 / {
 
-  macros {
-        exit_term: exit_term {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp \ &kp N>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
+
+        macros {
+
+              exit_term: exit_term {
+                  compatible = "zmk,behavior-macro";
+                  #binding-cells = <0>;
+                  bindings
+                      = <&macro_press &kp LCTRL>
+                      , <&macro_tap &kp \ &kp N>
+                      , <&macro_release &kp LCTRL>
+                      ;
+              };
+
+              tabo: tabo {
+                  compatible = "zmk,behavior-macro";
+                  #binding-cells = <0>;
+                  bindings
+                      = <&macro_tap &kp COLON>
+                      , <&macro_tap &kp T &kp A, &kp B, &kp O>
+                      , <&macro_tap &kp RET>
+                      ;
+              };
+
+          };
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
