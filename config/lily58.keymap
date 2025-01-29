@@ -58,15 +58,14 @@
 
             bindings = <
 &trans     &kp N6            &kp N7             &kp N8             &kp N9      &kp N0                           &trans     &trans     &trans           &trans    &trans    &trans
-&trans     &kp N1            &kp N2             &kp N3             &kp N4      &kp N5                           &kp N6     &kp N7     &kp N8           &kp N9    &kp N0    &trans
+&trans     &kp N1            &kp N2             &kp N3             &kp N4      &kp N5                           &kp N6     &kp N7     &kp MINUS        &kp N9    &kp N0    &trans
 &kp GRAVE  &kp EXCL          &kp AT             &kp HASH           &kp DOLLAR  &kp PRCNT                        &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans      &trans     &kp LBKT    &kp RBKT  &kp EQUAL  &kp UNDER  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+&trans     &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans      &trans     &kp LBKT    &kp RBKT  &kp EQUAL  &kp UNDER  &kp LT      &kp GT  &kp RBRC  &kp PIPE
                                                 &trans             &kp LGUI    &trans     &trans      &trans    &mo 3      &kp DEL    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
-
         raise_layer {
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
