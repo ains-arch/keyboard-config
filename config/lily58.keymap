@@ -52,7 +52,7 @@
 //  GALAXY |   Q   |    W  |    E    |    R    |    T    |               |    Y    |    U   |   I    |    O    |    P    |   B*        |
 &kp GRAVE   &trans  &kp COLON  &trans  &trans  &trans                       &kp F11   &kp F12 &kp UNDER &kp EQUAL &kp PLUS  &kp DEL // |
 //  CTRL   |   A   |   S   |    D    |    F    |    G    |               |    H    |    J   |    K   |    L    |    ;    |   '         |
-&kp CAPS  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                 &kp CARET &kp AMPS &kp STAR  &kp PIPE &kp COLON &kp BSLSH // |
+&kp CAPS  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                 &kp CARET &kp AMPS &kp STAR  &kp PIPE &kp COLON &kp BSLH  // |
 //  SHIFT  |   Z   |   X   |    C    |    V    |    B    |    {     }    |    N    |    M   |    <   |    >    |    ?    |  W UP       |
 &trans      &trans  &trans  &trans    &trans    &trans    &kp SQT &kp DQT  &trans    &trans   &kp LT   &kp GT    &kp QMARK &trans   // |
 //                     |  ALT   |   UFO   |  B UP   |  LDIPPER  | |  RDIPPER   | ROCKET  |  L UP  | PLANET                             |
