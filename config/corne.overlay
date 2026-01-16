@@ -1,0 +1,21 @@
+&spi1 {
+    status = "okay";
+
+    led_strip: led_strip@0 {
+        compatible = "worldsemi,ws2812-spi";
+        reg = <0>;
+        spi-max-frequency = <4000000>;
+        chain-length = <6>;
+        color-mapping = <1 0 2>;    /* GRB */
+    };
+};
+
+&spi1_cs {
+    status = "disabled";
+};
+
+&spi1_default {
+    group1 {
+        psels = <NRF_PSEL(SPIM_MOSI, 0, 6)>; /* P0.06 — standard Corne underglow pin */
+    };
+};
