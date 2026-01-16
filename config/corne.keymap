@@ -88,7 +88,7 @@
             //                        |  WIN |      |      |             |      |       |       |
 
             bindings = <
-&kp GRAVE   &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                  &kp N6  &rgb_ug_brt_inc  &rgb_ug_brt_dec &rgb_ug_hue_inc &rgb_ug_hue_dec    &rgb_ug_toggle
+&kp GRAVE   &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                  &kp N6 &kp N6 &kp N6 &kp N6 &kp N6 &kp N6  // &rgb_ug_brt_inc  &rgb_ug_brt_dec &rgb_ug_hue_inc &rgb_ug_hue_dec    &rgb_ug_toggle
 &kp CAPS    &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                              &kp LEFT   &kp DOWN   &kp MINUS  &kp LBKT  &kp RBKT  &trans
 &kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12                             &kp EQUAL  &kp MINUS  &kp LT     &kp GT    &trans    &exit_term
                                               &kp LGUI      &trans        &trans      &trans    &trans     &trans
