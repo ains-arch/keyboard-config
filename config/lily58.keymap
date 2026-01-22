@@ -29,44 +29,44 @@
         compatible = "zmk,keymap";
 
         default_layer {bindings = < 
-        // sensible defaults
 // -------------------------------------------------------------------------------------------------------------------------------------
-//  WHITE* |   1   |   2   |   3   |   4   |   5   |                      |   6   |   7   |   8      |   9    |   0     |   -          |
-&kp ESC     &kp N1   &kp N2  &kp N3  &kp N4  &kp N5                         &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS // |
-//  GALAXY |   Q   |   W   |   E   |   R   |   T   |                      |   Y   |   U   |   I      |   O    |   P     |   B*         |
-&kp TAB     &kp Q    &kp W   &kp E   &kp R   &kp T                          &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSPC  // |
+//  ESC    |   1   |   2   |   3   |   4   |   5   |                      |   6   |   7   |   8      |   9    |   0     |   -          |
+//  TAB    |   Q   |   W   |   E   |   R   |   T   |                      |   Y   |   U   |   I      |   O    |   P     |   BACKSPACE  |
 //  CTRL   |   A   |   S   |   D   |   F   |   G   |                      |   H   |   J   |   K      |   L    |   ;     |   '          |
-&kp LCTRL   &kp A    &kp S   &kp D   &kp F   &kp G                          &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOS  // |
-//  SHIFT  |   Z   |   X   |   C   |   V   |   B   |    [            ]    |   N   |   M   |   ,      |   .    |   /     |   W UP       |
-&kp LSHFT   &kp Z    &kp X   &kp C   &kp V   &kp B  &kp LPAR      &kp RPAR  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT // |
-//                    |  ALT  |   UFO   |  B UP |  LDIPPER |      |   RDIPPER  | ROCKET |  L UP  |  PLANET                             |
-                      &kp LALT  &kp LWIN   &mo 1   &kp RET           &kp SPACE    &mo 2  &kp BSPC  &kp RALT                         // |
+//  SHIFT  |   Z   |   X   |   C   |   V   |   B   |    (            )    |   N   |   M   |   ,      |   .    |   /     |   SHIFT      |
+//                    |  ALT  |   WIN   | LOWER |  RETURN |      |   SPACE | RAISE |  BACKSPACE | ALT  |                               |
 // -------------------------------------------------------------------------------------------------------------------------------------
+
+&kp ESC     &kp N1   &kp N2  &kp N3  &kp N4  &kp N5                         &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp TAB     &kp Q    &kp W   &kp E   &kp R   &kp T                          &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL   &kp A    &kp S   &kp D   &kp F   &kp G                          &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LSHFT   &kp Z    &kp X   &kp C   &kp V   &kp B  &kp LPAR      &kp RPAR  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                      &kp LALT  &kp LWIN   &mo 1   &kp RET           &kp SPACE    &mo 2  &kp BSPC  &kp RALT
             >; sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; };
 
         lower_layer {bindings = <
-        // up and to the left. middle: shift-y. up: function-y.
 // -------------------------------------------------------------------------------------------------------------------------------------
-//  WHITE* |   1   |   2   |    3    |    4    |    5    |               |    6    |    7   |   8    |    9    |    0    |   -         |
-&kp TILDE    &kp F1  &kp F2   &kp F3    &kp F4    &kp F5                   &kp F6    &kp F7  &kp F8    &kp F9    &kp F10  &kp INS   // |
-//  GALAXY |   Q   |    W  |    E    |    R    |    T    |               |    Y    |    U   |   I    |    O    |    P    |   B*        |
-&kp GRAVE   &trans  &kp COLON  &trans  &trans  &trans                       &kp F11   &kp F12 &kp UNDER &kp EQUAL &kp PLUS  &kp DEL // |
-//  CTRL   |   A   |   S   |    D    |    F    |    G    |               |    H    |    J   |    K   |    L    |    ;    |   '         |
-&kp CAPS  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                 &kp CARET &kp AMPS &kp STAR  &kp PIPE &kp COLON &kp BSLH  // |
-//  SHIFT  |   Z   |   X   |    C    |    V    |    B    |    {     }    |    N    |    M   |    <   |    >    |    ?    |  W UP       |
-&trans      &trans  &trans  &trans    &trans    &trans    &kp SQT &kp DQT  &trans    &trans   &kp LT   &kp GT    &kp QMARK &trans   // |
-//                     |  ALT   |   UFO   |  B UP   |  LDIPPER  | |  RDIPPER   | ROCKET  |  L UP  | PLANET                             |
-                        &trans    &trans    &trans    &trans          &trans     &mo 3    &kp DEL   &trans                          // |
+//  ~      |   F1   |   F2  |   F3    |   F4    |   F5    |               |   F6    |   F7   |  F8    |   F9    |   F10   |   INS       |
+//  `      |        |   :   |         |         |         |               |   F11   |   F12  |   _    |    =    |    +    |   DEL       |
+//  CAPS   |   !    |   @   |    #    |    $    |    %    |               |    ^    |   &    |    *   |   `|`   |    :    |   \         |
+//         |        |       |         |         |         |    '     "    |         |        |    <   |    >    |    ?    |             |
+//                     |        |         |         |           |   |            | SUPER  |  DEL  |      |
 // -------------------------------------------------------------------------------------------------------------------------------------
+
+&kp TILDE    &kp F1  &kp F2   &kp F3    &kp F4    &kp F5                   &kp F6    &kp F7  &kp F8    &kp F9    &kp F10  &kp INS
+&kp GRAVE   &trans  &kp COLON  &trans  &trans  &trans                       &kp F11   &kp F12 &kp UNDER &kp EQUAL &kp PLUS  &kp DEL
+&kp CAPS  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                 &kp CARET &kp AMPS &kp STAR  &kp PIPE &kp COLON &kp BSLH
+&trans      &trans  &trans  &trans    &trans    &trans    &kp SQT &kp DQT  &trans    &trans   &kp LT   &kp GT    &kp QMARK &trans
+                        &trans    &trans    &trans    &trans          &trans     &mo 3    &kp DEL   &trans
             >; sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; };
 
         raise_layer {
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |    [   |  |   ]   |  +   |   -   |   <   |  >   |   \   |   |   |
-            //                     |      |  WIN |      |    ALT |  |       |      |       |       |
+            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  <-  |   v   |  ^   |  ->   |       |       |
+            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |    [   |  |   ]   |      |       |   <   |  >   |   \   |  `|`  |
+            //                  |      |  WIN | SUPER | ALT |           |       |      |       |       |
 
             bindings = <
 &trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans   &trans    &trans
@@ -81,11 +81,11 @@
 
         super_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  -   |  ->   |       |
-            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |    [   |  |   ]   |  +   |   -   |   =   |  <   |   >   |   \   |
-            //                     |      |  WIN |      |        |  |       |      |       |       |
+            // |   BLUETOOTH STUFF                      |                   |      |       |      |       |       |        |
+            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |  8   |   9   |   0   |        |
+            // | CAPS  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  <-  |   v   |  -   |   [   |   ]   |        |
+            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |    [   |  |   ]   |  =   |   -   |  <   |   >   |       | exit \ |
+            //                  |      |  WIN |      |    |               |    |       |      |       |
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &trans     &trans     &trans     &trans    &trans    &trans
